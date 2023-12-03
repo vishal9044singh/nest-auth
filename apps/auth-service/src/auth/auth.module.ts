@@ -5,7 +5,7 @@ import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
 import { UserSchema } from './schemas/user.schema';
 import { OtpSchema} from './schemas/otp.schema';
-import { GoogleStrategy } from './utils/google.strategy';
+// import { GoogleStrategy } from './utils/google.strategy';
 import { ConfigModule } from '@nestjs/config';
 
 
@@ -22,6 +22,8 @@ import { ConfigModule } from '@nestjs/config';
     }),
   ],
   controllers: [AuthController],
-  providers: [AuthService, GoogleStrategy],
+  // providers: [AuthService, GoogleStrategy],
+   providers: [AuthService],
+
 })
 export class AuthModule {}

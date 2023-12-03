@@ -182,7 +182,7 @@ export class AuthService {
 
           //if not user means username or password is wrong.
           if (!user) {
-            throw new NotFoundException('Invalid Username or Account Suspended!')
+            throw new NotFoundException('Invalid Username/Password or Account Suspended!')
           }
 
           //checking if password matches or not
